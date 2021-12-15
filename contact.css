@@ -22,6 +22,16 @@ h1, h2, h3, h4 {
     font-family: 'Merienda', cursive;
 }
 
+h2, h3, h4 {
+    text-align: center;
+}
+
+h1 {
+    font-size : 1.6em;
+}
+
+/*espace header */
+
 header {
     display: flex;
     height: 250px;
@@ -29,12 +39,12 @@ header {
     justify-content: space-between;
     max-width: 1440px;
     margin: auto;
-
 }
 
 .logo {
     display: flex;
     align-items: center;
+    width : 50%;
 }
 .logo1 {
     height: 150px;
@@ -66,7 +76,6 @@ header {
     font-size: 16px;
     color : white;
     font-weight: bold;
-
 }
 
 .home1 {
@@ -78,25 +87,32 @@ header {
     font-weight: bold;
 }
 
+nav {
+    width : 50%;
+}
+
 nav > button {
     margin-right: 15px;
     margin-left : 15px;
 }
 
 .transition {
-    transition: color 3s;
-    transition: background-color 3s;;
+    transition: background-color 3s;
 }
 
 .transition:hover {
     background-color : red;
-    color : white;
-    
 }
 
-h2, h3, h4 {
-    text-align: center;
+.transitionColor {
+    transition : color 3s;
 }
+
+.transitionColor:hover {
+    color : white;
+}
+
+/*espace formulaire */
 
 form {
     background-color: #ebe3db;
@@ -145,12 +161,7 @@ iframe {
     margin-top: 30px;
 }
 
-
-
-
-
-
-
+/* espace footer */
 
 footer {
     margin : 0;
@@ -190,7 +201,9 @@ footer {
     font-size: 22px;
 }
 
-@media screen and (max-width : 980px) {
+/*espace responsive */
+
+@media screen and (max-width : 1150px) {
     
     header {
         display: flex;
@@ -201,6 +214,7 @@ footer {
     .logo {
         display: flex;
         flex-direction: column;
+        width : 100%;
     }
     nav {
         width: 100%;
