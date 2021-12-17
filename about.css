@@ -244,8 +244,6 @@ footer {
 
 }
 
-@media screen and (max-width : 780px){
-
     @media screen and (max-width: 780px){
 
         nav {
@@ -285,4 +283,3 @@ footer {
             flex-direction: column;
         }
     }
-}
